@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+
 class App extends Component {
   render() {
     return (
@@ -13,7 +16,7 @@ class App extends Component {
         <p className="App-intro">
           <h1>Hey Coder !</h1>
         </p>
-
+        <p>Hey</p>
         
       </div>
     );
