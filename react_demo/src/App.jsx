@@ -1,3 +1,9 @@
+import React from "react";
+
 export const App = () => {
-  return <h1>Hello, Vishal</h1>;
+  return React.createElement(
+    "div",
+    null,
+    React.createElement("h1", null, "Hello World")
+  );
 };
