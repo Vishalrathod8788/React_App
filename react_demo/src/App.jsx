@@ -322,9 +322,7 @@ export const NetFlix5 = () => {
     age: 18,
   };
   const canWatch = () => {
-    if (netflix.age >= 18) {
-      return "Watch Now";
-    }
+    if (netflix.age >= 18) return "Watch Now";
     return "Not Available";
   };
 
