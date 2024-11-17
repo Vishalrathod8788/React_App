@@ -1,13 +1,12 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { FindAge } from "./App";
+import { NetFlix, NetFlix2, NetFlix3 } from "./App";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <FindAge />
-    <FindAge />
-    <FindAge />
-    <FindAge />
+    <NetFlix />
+    <NetFlix2 />
+    <NetFlix3 />
   </StrictMode>
 );
