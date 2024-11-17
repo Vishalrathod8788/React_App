@@ -1,6 +1,3 @@
-// import React from "react";
-// import { Fragment } from "react";
-
 export const App = () => {
   // return (
   // You Can't One more component return in JavaScript
@@ -39,13 +36,34 @@ export const App = () => {
   // );
 };
 
-export const MyComponent = () => {
+export const FindAge = () => {
+  const name = "Stranger Things";
+  const rating = "8.7/10";
+  const summary =
+    "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.";
+  const genre = "Drama, Fantasy, Horror";
+
+  // const netflixShow = {
+  //   title: "",
+  //   ,
+  //   summary: "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.",
+  //   genre: "Drama, Fantasy, Horror"
+  // };
+
   return (
     <>
-      <h1>My Component</h1>
-      <p>{1 + 2 + 3}</p>
+      <div>
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BN2ZmYjg1YmItNWQ4OC00YWM0LWE0ZDktYThjOTZiZjhhN2Q2XkEyXkFqcGdeQXVyNjgxNTQ3Mjk@._V1_.jpg"
+          alt="Stranger Things"
+          style={{ width: "300px" }}
+        />
+      </div>
+      <h2>Name : {name}</h2>
+      <h3>Rating : {rating}</h3>
+      <p>summary : {summary}</p>
+      <p>Genre : {genre}</p>
+      <button>Watch Now</button>
     </>
   );
 };
-
-

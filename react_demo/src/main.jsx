@@ -1,10 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { MyComponent } from "./App.jsx";
+import { FindAge } from "./App";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <MyComponent />
+    <FindAge />
+    <FindAge />
+    <FindAge />
+    <FindAge />
   </StrictMode>
 );
