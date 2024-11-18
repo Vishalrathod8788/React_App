@@ -1,4 +1,4 @@
-export const NetFlix = () => {
+const NetFlix = () => {
   const netflix = {
     name: "Stranger Things",
     rating: "8.7/10",
@@ -29,3 +29,5 @@ export const NetFlix = () => {
     </>
   );
 };
+
+export default NetFlix;
