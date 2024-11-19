@@ -5,7 +5,7 @@ export const App = () => {
     <>
       <Headers />
       <NetflixSeries />
-      <Footer/>
+      <Footer />
     </>
-  );  
+  );
 };
