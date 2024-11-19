@@ -1,4 +1,4 @@
-export const NetflixSeries = () => {
+const NetflixSeries = () => {
   const netflix = {
     name: "Stranger Things",
     rating: "8.7/10",
@@ -29,3 +29,21 @@ export const NetflixSeries = () => {
     </>
   );
 };
+
+export const Footer = () => {
+  return (
+    <>
+      <p>Copyright by @VishalRathod</p>;
+    </>
+  );
+};
+
+export const Headers = () => {
+  return (
+    <>
+      <p>This is Header Part</p>
+    </>
+  );
+};
+
+export default NetflixSeries;
