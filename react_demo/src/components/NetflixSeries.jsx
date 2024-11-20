@@ -1,49 +1,29 @@
-const NetflixSeries = () => {
-  const netflix = {
-    name: "Stranger Things",
-    rating: "8.7/10",
-    summary:
-      "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.",
-    genre: "Drama, Fantasy, Horror",
-    age: 18,
-  };
-  const canWatch = () => {
-    if (netflix.age >= 18) return "Watch Now";
-    return "Not Available";
-  };
+import seriesData from "../api/seriesData.json";
 
+export const NetflixSeries = () => {
   return (
-    <>
-      <div>
-        <img
-          src="https://m.media-amazon.com/images/M/MV5BN2ZmYjg1YmItNWQ4OC00YWM0LWE0ZDktYThjOTZiZjhhN2Q2XkEyXkFqcGdeQXVyNjgxNTQ3Mjk@._V1_.jpg"
-          alt="Stranger Things"
-          style={{ width: "300px" }}
-        ></img>
-      </div>
-      <h2>Name : {netflix.name}</h2>
-      <h3>Rating : {netflix.rating}</h3>
-      <p>summary : {netflix.summary}</p>
-      <p>Genre : {netflix.genre}</p>
-      <button>{canWatch()}</button>
-    </>
+    <ul>
+      {seriesData.map((curEle) => {
+        return (
+          <li key={curEle.id}>
+            <div>
+              <img
+                src={curEle.img_url}
+                alt={curEle.name}
+                style={{ width: "300px" }}
+              ></img>
+            </div>
+            <h2>Name : {curEle.name}</h2>
+            <h3>Rating : {curEle.rating}</h3>
+            <p>summary : {curEle.description}</p>
+            <p>Genre : {curEle.genre}</p>
+            <p>Cast : {curEle.cast}</p>
+            <a href={curEle.watch_url} target="_VGR">
+              Watch Now
+            </a>
+          </li>
+        );
+      })}
+    </ul>
   );
 };
-
-export const Footer = () => {
-  return (
-    <>
-      <p>Copyright by @VishalRathod</p>;
-    </>
-  );
-};
-
-export const Headers = () => {
-  return (
-    <>
-      <p>This is Header Part</p>
-    </>
-  );
-};
-
-export default NetflixSeries;
