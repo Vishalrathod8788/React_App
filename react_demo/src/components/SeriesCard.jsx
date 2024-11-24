@@ -1,19 +1,17 @@
-export const SeriesCard = (props) => {
+export const SeriesCard = ({ data }) => {
+  const { id, img_url, name, rating, description, cast, genre, watch_url } =
+    data;
   return (
-    <li key={props.curEle.id}>
+    <li>
       <div>
-        <img
-          src={props.curEle.img_url}
-          alt={props.curEle.name}
-          style={{ width: "300px" }}
-        ></img>
+        <img src={img_url} alt={name} style={{ width: "300px" }}></img>
       </div>
-      <h2>Name : {props.curEle.name}</h2>
-      <h3>Rating : {props.curEle.rating}</h3>
-      <p>summary : {props.curEle.description}</p>
-      <p>Genre : {props.curEle.genre}</p>
-      <p>Cast : {props.curEle.cast}</p>
-      <a href={props.curEle.watch_url} target="_VGR">
+      <h2>Name : {name}</h2>
+      <h3>Rating : {rating}</h3>
+      <p>summary : {description}</p>
+      <p>Genre : {genre}</p>
+      <p>Cast : {cast}</p>
+      <a href={watch_url} target="_VGR">
         Watch Now
       </a>
     </li>
