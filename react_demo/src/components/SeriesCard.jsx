@@ -1,5 +1,7 @@
+// eslint-disable-next-line react/prop-types
 export const SeriesCard = ({ data }) => {
-  const { id, img_url, name, rating, description, cast, genre, watch_url } =
+  // eslint-disable-next-line react/prop-types
+  const { img_url, name, rating, description, cast, genre, watch_url } =
     data;
   return (
     <li>
