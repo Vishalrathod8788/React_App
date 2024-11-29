@@ -1,0 +1,86 @@
+[
+    {
+      "id": 1,
+      "rollNumber": "A101",
+      "firstName": "John",
+      "lastName": "Smith",
+      "age": 15,
+      "grade": "10th",
+      "contact": {
+        "email": "john.smith@school.com",
+        "phone": "123-456-7890",
+        "address": "123 School Street, City"
+      },
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 85
+        },
+        {
+          "name": "Science",
+          "score": 92
+        },
+        {
+          "name": "English",
+          "score": 88
+        }
+      ],
+      "isPresent": true
+    },
+    {
+      "id": 2,
+      "rollNumber": "A102",
+      "firstName": "Sarah",
+      "lastName": "Johnson",
+      "age": 16,
+      "grade": "10th",
+      "contact": {
+        "email": "sarah.j@school.com",
+        "phone": "123-456-7891",
+        "address": "456 Park Avenue, City"
+      },
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 95
+        },
+        {
+          "name": "Science",
+          "score": 88
+        },
+        {
+          "name": "English",
+          "score": 94
+        }
+      ],
+      "isPresent": true
+    },
+    {
+      "id": 3,
+      "rollNumber": "A103",
+      "firstName": "Michael",
+      "lastName": "Brown",
+      "age": 15,
+      "grade": "10th",
+      "contact": {
+        "email": "michael.b@school.com",
+        "phone": "123-456-7892",
+        "address": "789 Oak Road, City"
+      },
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 78
+        },
+        {
+          "name": "Science",
+          "score": 85
+        },
+        {
+          "name": "English",
+          "score": 82
+        }
+      ],
+      "isPresent": false
+    }
+]
