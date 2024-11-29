@@ -44,6 +44,14 @@
       "location": "Miami",
       "hobbies": ["soccer", "blogging", "music"],
       "email": "alex@example.com"
+    },
+    {
+      "id": 6,
+      "name": "Vishal Rathod",
+      "age": 20,
+      "occupation": "Software Developer",
+      "location": "Bangluru",
+      "hobbies": ["soccer", "blogging", "music"],
+      "email": "coder@vishal.sbs"
     }
-
 ]
