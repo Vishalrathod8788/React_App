@@ -1,4 +1,4 @@
-import DishesList from "./DishesList";
+import { DishesList } from "./DishesList";
 
 export const FoodMenu = () => {
   const Dishes = [
@@ -10,7 +10,7 @@ export const FoodMenu = () => {
     <div>
       <h1>FoodMenu</h1>
       {Dishes.map((dish, index) => {
-        <DishesList key={index} name={dish.name} price={dish.price} />;
+        return <DishesList key={index} name={dish.name} price={dish.price} />;
       })}
     </div>
   );

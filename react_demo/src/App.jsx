@@ -1,7 +1,5 @@
 // import { NetflixSeries } from "./components/NetflixSeries";
-import { Icard } from "./components/Icard";
-import { ProfilesCard } from "./components/ProfileCard";
-import { PropsExample } from "./components/PropsExample";
+import { FoodMenu } from "./components/FoodMenu";
 
 export const App = () => {
   return (
@@ -9,7 +7,7 @@ export const App = () => {
       {/* <NetflixSeries /> */}
       {/* <ProfilesCard /> */}
       {/* <Icard /> */}
-      <PropsExample />
+      <FoodMenu />
     </>
   );
 };
