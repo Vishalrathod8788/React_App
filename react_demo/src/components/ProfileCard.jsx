@@ -1,12 +1,12 @@
 import PersonalData from "../api/profileData.json";
-import {P}
+import { PersonalCard } from "./PersonalCard";
 
 export const ProfilesCard = () => {
   return (
     <>
       <ul>
         {PersonalData.map((curEle) => {
-          return <PersonalData key={curEle.id} data={curEle} />;
+          return <PersonalCard key={curEle.id} data={curEle} />;
         })}
       </ul>
     </>

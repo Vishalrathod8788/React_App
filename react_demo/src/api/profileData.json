@@ -1,5 +1,5 @@
-{
-  "profiles": [
+[
+
     {
       "id": 1,
       "name": "John Doe",
@@ -45,6 +45,5 @@
       "hobbies": ["soccer", "blogging", "music"],
       "email": "alex@example.com"
     }
-  ]
-}
 
+]
