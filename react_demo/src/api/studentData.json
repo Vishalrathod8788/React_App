@@ -6,7 +6,7 @@
       "lastName": "Smith",
       "age": 15,
       "grade": "10th",
-      "isPresent": true
+      "isPresent": "Yes"
     },
     {
       "id": 2,
@@ -15,7 +15,7 @@
       "lastName": "Johnson",
       "age": 16,
       "grade": "10th",
-      "isPresent": true
+      "isPresent": "No"
     },
     {
       "id": 3,
@@ -24,7 +24,7 @@
       "lastName": "Brown",
       "age": 15,
       "grade": "10th",
-      "isPresent": false
+      "isPresent": "No"
     },
     {
       "id": 4,
@@ -33,7 +33,7 @@
       "lastName": "Davis",
       "age": 16,
       "grade": "10th",
-      "isPresent": true
+      "isPresent": "Yes"
     },
     {
       "id": 5,
@@ -42,7 +42,7 @@
       "lastName": "Wilson",
       "age": 15,
       "grade": "10th",
-      "isPresent": false
+      "isPresent": "No"
     },
     {
       "id": 6,
@@ -51,7 +51,7 @@
       "lastName": "Taylor",
       "age": 16,
       "grade": "10th",
-      "isPresent": true
+      "isPresent": "Yes"
     },
     {
       "id": 7,
@@ -60,7 +60,7 @@
       "lastName": "Anderson",
       "age": 15,
       "grade": "10th",
-      "isPresent": true
+      "isPresent": "Yes"
     },
     {
       "id": 8,
@@ -69,7 +69,7 @@
       "lastName": "Thomas",
       "age": 16,
       "grade": "10th",
-      "isPresent": false
+      "isPresent": "No"
     },
     {
       "id": 9,
@@ -78,7 +78,7 @@
       "lastName": "Moore",
       "age": 15,
       "grade": "10th",
-      "isPresent": true
+      "isPresent": "Yes"
     },
     {
       "id": 10,
@@ -87,6 +87,6 @@
       "lastName": "Jackson",
       "age": 16,
       "grade": "10th",
-      "isPresent": true
+      "isPresent": "Yes"
     }
 ]
