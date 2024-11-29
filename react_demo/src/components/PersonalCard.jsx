@@ -1,4 +1,4 @@
-export const PersonalData = ({ data }) => {
+export const PersonalCard = ({ data }) => {
   const { name, age, occupation, location } = data;
   return (
     <li>
