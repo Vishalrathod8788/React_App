@@ -1,14 +1,14 @@
-const IcardData = ({ IcardData }) => {
-  const { rollNumber, firstName, lastName, age, grade, isPresent } = IcardData;
+export const IcardData = ({ data }) => {
+  const { rollNumber, firstName, lastName, age, grade, isPresent } = data;
   return (
     <>
       <li>
-        <p>Roll No. : {studentData[0].rollNumber}</p>
-        <p>First Name : {studentData[0].firstName}</p>
-        <p>Last Name : {studentData[0].lastName}</p>
-        <p>Age : {studentData[0].age}</p>
-        <p>Grade : {studentData[0].grade}</p>
-        <p>IsPresent : {studentData[0].isPresent}</p>
+        <p>Roll No. : {rollNumber}</p>
+        <p>First Name : {firstName}</p>
+        <p>Last Name : {lastName}</p>
+        <p>Age : {age}</p>
+        <p>Grade : {grade}</p>
+        <p>IsPresent : {isPresent}</p>
       </li>
     </>
   );
