@@ -1,5 +1,5 @@
 // import { NetflixSeries } from "./components/NetflixSeries";
-import { FoodMenu } from "./components/FoodMenu";
+import { Weather } from "./components/Weather";
 
 export const App = () => {
   return (
@@ -7,7 +7,7 @@ export const App = () => {
       {/* <NetflixSeries /> */}
       {/* <ProfilesCard /> */}
       {/* <Icard /> */}
-      <FoodMenu />
+      <Weather />
     </>
   );
 };
