@@ -6,25 +6,6 @@
       "lastName": "Smith",
       "age": 15,
       "grade": "10th",
-      "contact": {
-        "email": "john.smith@school.com",
-        "phone": "123-456-7890",
-        "address": "123 School Street, City"
-      },
-      "subjects": [
-        {
-          "name": "Mathematics",
-          "score": 85
-        },
-        {
-          "name": "Science",
-          "score": 92
-        },
-        {
-          "name": "English",
-          "score": 88
-        }
-      ],
       "isPresent": true
     },
     {
@@ -34,25 +15,6 @@
       "lastName": "Johnson",
       "age": 16,
       "grade": "10th",
-      "contact": {
-        "email": "sarah.j@school.com",
-        "phone": "123-456-7891",
-        "address": "456 Park Avenue, City"
-      },
-      "subjects": [
-        {
-          "name": "Mathematics",
-          "score": 95
-        },
-        {
-          "name": "Science",
-          "score": 88
-        },
-        {
-          "name": "English",
-          "score": 94
-        }
-      ],
       "isPresent": true
     },
     {
@@ -62,25 +24,69 @@
       "lastName": "Brown",
       "age": 15,
       "grade": "10th",
-      "contact": {
-        "email": "michael.b@school.com",
-        "phone": "123-456-7892",
-        "address": "789 Oak Road, City"
-      },
-      "subjects": [
-        {
-          "name": "Mathematics",
-          "score": 78
-        },
-        {
-          "name": "Science",
-          "score": 85
-        },
-        {
-          "name": "English",
-          "score": 82
-        }
-      ],
       "isPresent": false
+    },
+    {
+      "id": 4,
+      "rollNumber": "A104",
+      "firstName": "Emily",
+      "lastName": "Davis",
+      "age": 16,
+      "grade": "10th",
+      "isPresent": true
+    },
+    {
+      "id": 5,
+      "rollNumber": "A105",
+      "firstName": "David",
+      "lastName": "Wilson",
+      "age": 15,
+      "grade": "10th",
+      "isPresent": false
+    },
+    {
+      "id": 6,
+      "rollNumber": "A106",
+      "firstName": "Olivia",
+      "lastName": "Taylor",
+      "age": 16,
+      "grade": "10th",
+      "isPresent": true
+    },
+    {
+      "id": 7,
+      "rollNumber": "A107",
+      "firstName": "Daniel",
+      "lastName": "Anderson",
+      "age": 15,
+      "grade": "10th",
+      "isPresent": true
+    },
+    {
+      "id": 8,
+      "rollNumber": "A108",
+      "firstName": "Sophia",
+      "lastName": "Thomas",
+      "age": 16,
+      "grade": "10th",
+      "isPresent": false
+    },
+    {
+      "id": 9,
+      "rollNumber": "A109",
+      "firstName": "Matthew",
+      "lastName": "Moore",
+      "age": 15,
+      "grade": "10th",
+      "isPresent": true
+    },
+    {
+      "id": 10,
+      "rollNumber": "A110",
+      "firstName": "Ava",
+      "lastName": "Jackson",
+      "age": 16,
+      "grade": "10th",
+      "isPresent": true
     }
 ]
