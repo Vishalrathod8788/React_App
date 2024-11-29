@@ -1,4 +1,4 @@
-import DishesList from "./";
+import DishesList from "./DishesList";
 
 export const FoodMenu = () => {
   const Dishes = [
