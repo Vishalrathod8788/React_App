@@ -1,11 +1,11 @@
 // import { NetflixSeries } from "./components/NetflixSeries";
-import { Profiles } from "./components/Profiles";
+import { ProfilesCard } from "./components/ProfileCard";
 
 export const App = () => {
   return (
     <>
       {/* <NetflixSeries /> */}
-      <Profiles />
+      <ProfilesCard />
     </>
   );
 };
