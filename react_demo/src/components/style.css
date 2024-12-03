@@ -72,7 +72,7 @@ ul {
   }
   
   .Demo img {
-    height: 250px;
+    height: 350px; /* Adjusted height for tablet view */
   }
   
   .Demo h2 {
@@ -94,7 +94,7 @@ ul {
   }
   
   .Demo img {
-    height: 200px;
+    height: 300px; /* Adjusted height for mobile view */
   }
   
   .Demo h2 {
