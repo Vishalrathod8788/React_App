@@ -1,7 +1,8 @@
+import "./style.css";
 export const SeriesCard = ({ data }) => {
   const { img_url, name, rating, description, cast, genre, watch_url } = data;
   return (
-    <li>
+    <li className="Demo">
       <div>
         <img src={img_url} alt={name} style={{ width: "300px" }}></img>
       </div>
