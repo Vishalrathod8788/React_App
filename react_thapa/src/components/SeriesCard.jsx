@@ -1,4 +1,6 @@
-import "./style.css";
+import styles from "./Netflix.module.css";
+import styled from "styled-components";
+
 export const SeriesCard = ({ data }) => {
   //   console.log(props);
   const { img_url, name, rating, description, cast, genre, watch_url } = data;
