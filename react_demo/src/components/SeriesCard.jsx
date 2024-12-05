@@ -48,7 +48,7 @@ export const SeriesCard = ({ data }) => {
           Rating:
           <span className={`${styles.rating} ${ratingClass}`}>{rating}</span>
         </Rating>
-        <p className="text-3xl font-bold underline text-cyan-300">
+        <p>
           Summary: {description}{" "}
         </p>
         <p>Genre: {genre.join(", ")} </p>

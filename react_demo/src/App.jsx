@@ -1,9 +1,9 @@
-import { NetflixSeries } from "./components/NetflixSeries";
+import { ProfilesCard } from "./components/ProfileCard";
 import "./components/style.css";
 export const App = () => {
   return (
     <>
-      <NetflixSeries />
+      <ProfilesCard />
     </>
   );
 };
