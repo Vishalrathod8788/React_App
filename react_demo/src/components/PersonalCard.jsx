@@ -26,6 +26,9 @@ export const PersonalCard = ({ data }) => {
     borderRadius: "5px",
   });
 
+  const CustomH3 = styled.h3`
+    padding: 10px;
+  `;
   // const ButtonThapa = styled.button({
   //   padding: "1.2rem 2.4rem",
   //   border: "none",
@@ -39,9 +42,9 @@ export const PersonalCard = ({ data }) => {
   return (
     <li className={style.card}>
       <h1 className={style["card-content"]}>Name : {name}</h1>
-      <h3>Age : {age}</h3>
-      <p>Occupation : {occupation}</p>
-      <h3>Location : {location}</h3>
+      <CustomH3>Age : {age}</CustomH3>
+      <p style={{ padding: "10px" }}>Occupation : {occupation}</p>
+      <CustomH3>Location : {location}</CustomH3>
       <MyButton>Contact</MyButton>
     </li>
   );
