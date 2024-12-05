@@ -30,7 +30,7 @@
     {
       "id": 4,
       "name": "Emily Chen",
-      "age": 25,
+      "age": 15,
       "occupation": "Data Scientist",
       "location": "Boston",
       "hobbies": ["dancing", "machine learning", "swimming"],
