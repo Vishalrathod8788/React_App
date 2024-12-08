@@ -43,7 +43,7 @@ export const PersonalCard = ({ data }) => {
     <li className={style.card}>
       <h1 className={style["card-content"]}>Name : {name}</h1>
       <CustomH3>Age : {age}</CustomH3>
-      <p style={{ padding: "10px" }}>Occupation : {occupation}</p>
+      <p className="p-[0.5rem] text-sky-400/100">Occupation : {occupation}</p>
       <CustomH3>Location : {location}</CustomH3>
       <MyButton>Contact</MyButton>
     </li>
