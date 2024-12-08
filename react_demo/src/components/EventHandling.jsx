@@ -5,6 +5,10 @@ export const EventHandling = () => {
     alert("Button clicked!");
   }
 
+  const hanleWelcomeBtn = (user) => {
+    alert(`Hey! ${user} Welcome to my Learning Journey`);
+  };
+
   function handleAreaEnter() {
     alert("Mouse Enter!");
   }
@@ -16,15 +20,28 @@ export const EventHandling = () => {
   return (
     <>
       <div className="main-div">
+        {/* Standared Function */}
         <button className="events-handling" onClick={handleButtonClick}>
-          Click Me!
+          Click Me 1
         </button>
-        <textarea
+        <br />
+
+        {/* Fat Arrow Function */}
+        <button onClick={() => handleButtonClick()}>Click Me 2</button>
+        <br />
+
+        {/* Inline Function */}
+        <button onClick={(event) => console.log(event)}>Click Me 3</button>
+
+        {/* Argument with Parameter */}
+        <button onClick={() => hanleWelcomeBtn("Vishal")}>Click</button>
+        {/* ........................................................................................ */}
+        {/* <textarea
           className="events-handling"
           onMouseEnter={handleAreaEnter}
           onMouseLeave={handleAreaLeave}
           style={{ border: "5px solid black" }}
-        ></textarea>
+        ></textarea> */}
       </div>
     </>
   );
