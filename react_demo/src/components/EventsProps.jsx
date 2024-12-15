@@ -7,11 +7,10 @@ export const EventProps = () => {
   const HandleWelcomeUser = (name) => {
     alert(`Welcome ${name}`);
   };
-
   return (
     <>
       <WelcomeUser
-        onClick={() => HandleWelcomeUser("Vishal")}
+        onClick={(User) => HandleWelcomeUser("Vishal")}
         onMouseEnter={HandleMouseHover}
       />
     </>
@@ -22,7 +21,7 @@ const WelcomeUser = (props) => {
   const data = props;
   const hanldeGreeting = () => {
     console.log("Hello! Greeting");
-    props.onClick("CAD");
+    props.onClick("Vishal");
   };
   return (
     <>
