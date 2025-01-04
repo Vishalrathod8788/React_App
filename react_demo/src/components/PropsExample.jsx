@@ -20,12 +20,12 @@ export const PropsExample = () => {
 };
 
 function Profile(prop) {
-    return (
-      <>
-        <h2>Name : {prop.name}</h2>
-        <p>Age : {prop.age}</p>
-        <p>{prop.greeting}</p>
-        <div>{prop.div}</div>
-      </>
-    );
+  //   return (
+  //     <>
+  //       <h2>Name : {prop.name}</h2>
+  //       <p>Age : {prop.age}</p>
+  //       <p>{prop.greeting}</p>
+  //       <div>{prop.div}</div>
+  //     </>
+  //   );
 }
