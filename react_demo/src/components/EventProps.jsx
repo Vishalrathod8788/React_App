@@ -1,9 +1,11 @@
+import "./EV.css";
 export const EventProps = () => {
   const handleClick = (user) => {
     alert(`Welcome ${user}`);
   };
   const handleHover = () => {
     alert("Hovered");
+    console.log("Hovered");
   };
   return (
     <>
@@ -16,11 +18,11 @@ export const EventProps = () => {
 };
 
 const WelcomeUser = (props) => {
-  const { handleClick, handleHover } = props;
+  const { buttonClick, buttonHover } = props;
   return (
     <>
-      <button onClick={handleClick}>Click Me!</button>
-      <button onMouseEnter={handleHover}>Mouse Hovered</button>
+      <button onClick={buttonClick}>Click Me!</button>
+      <button onMouseEnter={buttonHover}>Mouse Hovered</button>
     </>
   );
 };

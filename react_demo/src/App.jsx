@@ -1,11 +1,12 @@
 // import { ProfilesCard } from "./components/ProfileCard";
 import "./components/style.css";
-import { EventHandling } from "./components/EventHandling";
+
+import { EventProps } from "./components/EventProps";
 
 export const App = () => {
   return (
     <>
-      <EventHandling />
+      <EventProps />
     </>
   );
 };
