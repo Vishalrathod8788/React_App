@@ -12,9 +12,10 @@ export const EventPropagation = () => {
   };
 
   const handleChildClick = (event) => {
-    alert("Child Clicked");
     console.log(event);
+    event.stopPropagation();
     console.log("Child Clicked");
+    alert("Child Clicked");
   };
 
   return (
@@ -22,7 +23,7 @@ export const EventPropagation = () => {
       <section className="event-propagation">
         <div className="g-div" onClick={handleGrandParentClick}>
           <div className="p-div" onClick={handleParentClick}>
-            <button className="c-div" onCanPlay={handleChildClick}>
+            <button className="c-div" onClick={handleChildClick}>
               Click Me!
             </button>
           </div>
