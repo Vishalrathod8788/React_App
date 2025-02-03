@@ -1,11 +1,12 @@
-// import { ProfilesCard } from "./components/ProfileCard";
-import "./components/style.css";
-import { EventPropagation } from "./components/EventPropagation";
+import { State } from "./components/hooks/States";
+import "./components/EV.css";
 
 export const App = () => {
   return (
     <>
-      <EventPropagation />
+      <section className="container">
+        <State />
+      </section>
     </>
   );
 };
