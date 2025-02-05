@@ -1,11 +1,11 @@
-import { State } from "./components/hooks/States";
 import "./components/EV.css";
+import { DerivedState } from "./components/hooks/DerivedState";
 
 export const App = () => {
   return (
     <>
       <section className="container">
-        <State />
+        <DerivedState />
       </section>
     </>
   );
