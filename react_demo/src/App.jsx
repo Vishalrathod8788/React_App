@@ -1,11 +1,11 @@
 import "./components/EV.css";
-import { DerivedState } from "./components/hooks/DerivedState";
+import { LiftStateUp } from "./components/LiftStateUp";
 
 export const App = () => {
   return (
     <>
       <section className="container">
-        <DerivedState />
+        <LiftStateUp />
       </section>
     </>
   );
