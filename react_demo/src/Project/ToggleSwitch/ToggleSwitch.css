@@ -1,30 +1,49 @@
-.toggle-switch {
+.toggle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.large-toggle-switch {
   position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 200px;
+  height: 100px;
   background-color: #ccc;
-  border-radius: 34px;
-  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.switch-state {
+.switch-handle {
   position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #2196f3;
-  border-radius: 34px;
-  transition: 0.4s;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 45px;
+  transition: transform 0.3s ease;
+}
+
+.large-toggle-switch.on .switch-handle {
+  transform: translateX(100px);
+}
+
+.switch-label {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.on {
+  background-color: #4caf50;
+  transform: translateX(0);
+}
+
+.off {
+  background-color: #ccc;
+  transform: translateX(0);
 }
