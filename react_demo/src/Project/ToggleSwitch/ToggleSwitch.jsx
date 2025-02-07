@@ -1,4 +1,4 @@
-import "ToggleSwitch.css";
+import "./Project/ToggleSwitch/ToggleSwitch.css";
 export const ToggleSwitch = () => {
   return (
     <div className="toggle-switch">
