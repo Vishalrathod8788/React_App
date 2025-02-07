@@ -72,6 +72,7 @@ h1 {
   font-size: 3rem;
   min-height: 25vh;
   width: 100%;
+  font-weight: 900;
 }
 
 section h1 {
@@ -107,7 +108,7 @@ form input {
   transition: background-color 200ms ease-in-out;
   width: 100%;
   background-color: #f2f3f4;
-  /* color: var(--primary-color); */
+  color: var(--primary-color);
   color: #1c2833;
 }
 
@@ -152,6 +153,7 @@ span {
   justify-content: center;
   align-items: center;
   max-width: 1200px;
+  padding-left: 2rem;
 }
 
 .todo-list {
@@ -196,9 +198,10 @@ li span {
   height: 3rem;
   border-radius: 80%;
   margin: 0 5px;
-  background-color: #fff;
+  display: flex;
   color: rgb(0, 0, 0);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #f2f3f4;
 }
 
 .check-btn {
