@@ -16,11 +16,15 @@ export const Todo = () => {
 
     setTasks([...tasks, inputValue]);
 
+    if (tasks.includes(inputValue)) {
+      //   alert("Task already exists");
+      setInputValue("");
+      return;
+    }
+
     if (inputValue) {
       setInputValue("");
     }
-
-    
   };
 
   return (
@@ -44,6 +48,13 @@ export const Todo = () => {
               Add task
             </button>
           </form>
+        </section>
+        <section className="myUnOrdList">
+          <ul>
+          task.map((curTask, index) => {
+            return <li key={index}> {curTask} </li>;
+          });
+          </ul>
         </section>
       </header>
     </section>
