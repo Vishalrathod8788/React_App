@@ -1,11 +1,12 @@
 import "./components/EV.css";
-import { LiftStateUp } from "./components/LiftStateUp";
+
+import { ToggleSwitch } from "./Project/ToggleSwitch/ToggleSwitch";
 
 export const App = () => {
   return (
     <>
       <section className="container">
-        <LiftStateUp />
+        <ToggleSwitch />
       </section>
     </>
   );
