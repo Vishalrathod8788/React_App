@@ -4,13 +4,14 @@ import "./ToggleSwitch.css";
 export const ToggleSwitch = () => {
   const [isOn, setIsOn] = useState(false);
 
-  const handleOnOff = () => {}
+  const handleOnOff = () => {
+    setIsOn(!isOn);
+  };
   return (
-    <div className="toggle-container">
-      <div className={`large-toggle-switch`} onClick={handleOnOff}>
-        <div className={`switch-handle ${is}`}></div>
+    <div className="toggle-switch">
+      <div className={`switch ${isOn ? "on" : ""}`} onClick={toggleSwitch}>
+        <span className="switch-state">{isOn ? "On" : "Off"}</span>
       </div>
-      <p className="switch-label">{isOn ? "ON" : "OFF"}</p>
     </div>
   );
 };
