@@ -3,6 +3,25 @@ import "./Todo.css";
 
 export const Todo = () => {
   const [inputValue, setInputValue] = useState("");
+  const [tasks, setTasks] = useState([]);
+
+  const handleInputChange = (inputValue) => {
+    setInputValue(inputValue);
+  };
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+
+    if (!inputValue) return alert("please write some task");
+
+    setTasks([...tasks, inputValue]);
+
+    if (inputValue) {
+      setInputValue("");
+    }
+
+    
+  };
 
   return (
     <section className="todo-container">
@@ -10,7 +29,7 @@ export const Todo = () => {
         <h1>Todo List</h1>
 
         <section className="form">
-          <form>
+          <form onSubmit={handleFormSubmit}>
             <div>
               <input
                 type="text"
@@ -18,6 +37,7 @@ export const Todo = () => {
                 className="todo-input"
                 autoComplete="false"
                 value={inputValue}
+                onChange={(event) => handleInputChange(event.target.value)}
               />
             </div>
             <button type="submit" className="todo-btn">
