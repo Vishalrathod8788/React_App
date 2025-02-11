@@ -101,7 +101,7 @@ form input {
   letter-spacing: 0.1rem;
   border: none;
   outline: none;
-  /* border-radius: 15; */
+  border-radius: 15;
   border-top-left-radius: 17px;
   border-bottom-left-radius: 17px;
   max-width: 500px;
@@ -157,7 +157,8 @@ span {
 
 .todo-list {
   min-width: 25%;
-
+  max-height: 300px; /* Adjust as needed */
+  overflow-y: scroll;
   /* To remove the bullets of unordered list */
   list-style: none;
 }
@@ -179,8 +180,8 @@ span {
   grid-template-columns: 1fr 0.3fr 0.3fr;
   justify-content: start;
   gap: 1.6rem;
-  /*align-items: center;
-      */ /*wrapsthelinks*/
+  align-items: center;
+       /*wrapsthelinks*/
   overflow-wrap: anywhere;
 }
 
