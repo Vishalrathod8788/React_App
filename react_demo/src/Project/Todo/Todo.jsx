@@ -39,6 +39,12 @@ export const Todo = () => {
     setDateTime(`${formatedDate} - ${formatedTime}`);
   }, 1000);
 
+  // Delete Task Function:
+
+  const handleDeleteTodo = (value) => {
+    setTasks(tasks.filter((item) => item !== value));
+  };
+
   return (
     <section className="todo-container">
       <header>
@@ -74,13 +80,23 @@ export const Todo = () => {
               >
                 <MdCheck className="check-btn" />
               </button>
-              <button style={{ backgroundColor: "#f2f3f4" }}>
+              <button
+                style={{ backgroundColor: "#f2f3f4" }}
+                onClick={() => handleDeleteTodo(task)}
+              >
                 <MdDeleteForever className="delete-btn" />
               </button>
             </li>
           ))}
         </ul>
       </section>
+      <button
+        onClick={() => setTasks([])}
+        className="clear-btn"
+        style={{ color: "white" }}
+      >
+        Clear All Tasks
+      </button>
     </section>
   );
 };
