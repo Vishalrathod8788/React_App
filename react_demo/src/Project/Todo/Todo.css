@@ -54,6 +54,9 @@ h1 {
   color: white;
   transition: 0.3s linear;
   overflow: hidden;
+  max-height: 100vh;
+  overflow-y: auto; 
+  padding: 20px;
 }
 
 .header,
