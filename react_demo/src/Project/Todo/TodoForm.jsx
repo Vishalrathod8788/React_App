@@ -9,6 +9,8 @@ export const TodoForm = ({ onAddTodo }) => {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
+    const trimmedInputValue = inputValue.content.trim();
+    if (!trimmedInputValue) return;
     onAddTodo(inputValue);
     setInputValue({ id: "", content: "", checked: false });
   };
