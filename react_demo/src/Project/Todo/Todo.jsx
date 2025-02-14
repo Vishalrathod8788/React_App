@@ -1,101 +1,87 @@
 import { useState } from "react";
 import "./Todo.css";
-import { MdCheck, MdDeleteForever } from "react-icons/md";
+import { TodoForm } from "./TodoForm";
+import { TodoList } from "./TodoList";
+import { TodoDate } from "./TodoDate";
+import {
+  getLocalStorageTodoData,
+  setLocalStorageTodoData,
+} from "./TodoLocalStorage";
 
 export const Todo = () => {
-  const [inputValue, setInputValue] = useState("");
-  const [tasks, setTasks] = useState([]);
-  const [dateTime, setDateTime] = useState("");
+  const [task, setTask] = useState(() => getLocalStorageTodoData());
 
-  const handleInputChange = (inputValue) => {
-    setInputValue(inputValue);
+  const handleFormSubmit = (inputValue) => {
+    const { id, content, checked } = inputValue;
+
+    //to check if the input field is empty or not
+    if (!content) return;
+
+    // to check if the data is already existing or not
+    // if (task.includes(inputValue)) return;
+    const ifTodoContentMatched = task.find(
+      (curTask) => curTask.content === content
+    );
+    if (ifTodoContentMatched) return;
+
+    setTask((prevTask) => [...prevTask, { id, content, checked }]);
   };
 
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
+  //todo add data to localStorage
+  setLocalStorageTodoData(task);
 
-    if (!inputValue) return;
-
-    if (tasks.includes(inputValue)) {
-      setInputValue("");
-      return;
-    }
-
-    setTasks([...tasks, inputValue]);
-
-    if (inputValue) {
-      setInputValue("");
-    }
-  };
-
-  //Todo - Add date and time
-
-  setInterval(() => {
-    const date = new Date();
-    const formatedDate = date.toLocaleDateString();
-    const formatedTime = date.toLocaleTimeString();
-
-    setDateTime(`${formatedDate} - ${formatedTime}`);
-  }, 1000);
-
-  // Delete Task Function:
-
+  //todo handleDeleteTodo function
   const handleDeleteTodo = (value) => {
-    setTasks(tasks.filter((item) => item !== value));
+    const updatedTask = task.filter((curTask) => curTask.content !== value);
+    setTask(updatedTask);
+  };
+
+  //todo handleClearTodoData functionality
+  const handleClearTodoData = () => {
+    setTask([]);
+  };
+
+  //todo handleCheckedTodo functionality
+  const handleCheckedTodo = (content) => {
+    const updatedTask = task.map((curTask) => {
+      if (curTask.content === content) {
+        return { ...curTask, checked: !curTask.checked };
+      } else {
+        return curTask;
+      }
+    });
+    setTask(updatedTask);
   };
 
   return (
     <section className="todo-container">
       <header>
-        <h1>Todo List</h1>
-        <h2 className="date-time">{dateTime}</h2>
+        <h1 style={{  }}>Todo List</h1>
+        <TodoDate />
       </header>
-      <section className="form">
-        <form onSubmit={handleFormSubmit}>
-          <div>
-            <input
-              type="text"
-              placeholder="Add a new task"
-              className="todo-input"
-              autoComplete="false"
-              value={inputValue}
-              onChange={(event) => handleInputChange(event.target.value)}
-            />
-          </div>
-          <button type="submit" className="todo-btn">
-            Add task
-          </button>
-        </form>
-      </section>
+
+      <TodoForm onAddTodo={handleFormSubmit} />
+
       <section className="myUnOrdList">
         <ul>
-          {tasks.map((task, index) => (
-            <li key={index} className="todo-item">
-              <span>{task}</span>
-              <button
-                style={{
-                  backgroundColor: "#f2f3f4",
-                }}
-              >
-                <MdCheck className="check-btn" />
-              </button>
-              <button
-                style={{ backgroundColor: "#f2f3f4" }}
-                onClick={() => handleDeleteTodo(task)}
-              >
-                <MdDeleteForever className="delete-btn" />
-              </button>
-            </li>
-          ))}
+          {task.map((curTask) => {
+            return (
+              <TodoList
+                key={curTask.id}
+                data={curTask.content}
+                checked={curTask.checked}
+                onHandleDeleteTodo={handleDeleteTodo}
+                onHandleCheckedTodo={handleCheckedTodo}
+              />
+            );
+          })}
         </ul>
       </section>
-      <button
-        onClick={() => setTasks([])}
-        className="clear-btn"
-        style={{ color: "white" }}
-      >
-        Clear All Tasks
-      </button>
+      <section>
+        <button className="clear-btn" onClick={handleClearTodoData}>
+          Clear all
+        </button>
+      </section>
     </section>
   );
 };
